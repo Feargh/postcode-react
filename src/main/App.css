@@ -1,0 +1,24 @@
+:root {
+    --color: rgb(12, 13, 121);
+}
+
+.logo {
+    height: 10em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: x-large;
+    color: var(--color);
+}
+
+.themeFontColor {
+    color: var(--color);
+}
+
+tr {
+    cursor: pointer;
+}
