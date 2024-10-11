@@ -4,13 +4,13 @@ import RandomPostcode from "../postcode/RandomPostcode";
 import PostcodeList from "../postcode/PostcodeList";
 import PostcodeSingle from "../postcode/PostcodeSingle";
 import PostcodeForm from "../postcode/PostcodeForm";
-import NavbarBanner from "./NavbarBanner";
+import Navbar from "./Navbar";
 
 function App() {
     return (
         <BrowserRouter>
             <div className='container'>
-                <NavbarBanner />
+                <Navbar />
                 {/* <Header subtitle='Postcodes from all over the UK' /> */}
                 <Routes>
                     <Route path='/' element={<PostcodeList />}></Route>

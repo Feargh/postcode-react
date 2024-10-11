@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./PostcodeLogo.png";
 
-const NavbarBanner = () => {
+const Navbar = () => {
     return (
         <nav className='navbar navbar-expand-lg navbar-light bg-light'>
             <div className='container-fluid'>
@@ -48,4 +48,4 @@ const NavbarBanner = () => {
     );
 };
 
-export default NavbarBanner;
+export default Navbar;
