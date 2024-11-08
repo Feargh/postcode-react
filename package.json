@@ -3,10 +3,10 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://feargh.github.io/react-deploy-gitpages/",
+    "homepage": "https://feargh.github.io/postcode-react/",
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -d dist",
         "dev": "vite",
         "start": "vite",
         "build": "tsc -b && vite build",
