@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Postcode App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- ![The website running with the database loading postcode data](image.png) -->
+<img src="./public/homepage-screenshot.png" max-width="800" height="400">
 
-Currently, two official plugins are available:
+## Made to learn about React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   There is another repo for the backend which is .NET and C#. This is not
+    deployed so the postcodes do not currently load on the main page.
 
-## Expanding the ESLint configuration
+## React app deployed to github pages using this guide:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   https://create-react-app.dev/docs/deployment/
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+-   Needed to change the script to: `"deploy": "gh-pages -d dist",`
+-   Needed to add `base: "https://feargh.github.io/postcode-react/",` to
+    vite.config.ts
