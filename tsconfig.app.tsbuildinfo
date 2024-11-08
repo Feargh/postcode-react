@@ -1,0 +1,1 @@
+{"root":["./src/apistatus.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/hooks/postcodehooks.ts","./src/main/app.tsx","./src/main/header.tsx","./src/main/navbar.tsx","./src/postcode/postcodeform.tsx","./src/postcode/postcodelist.tsx","./src/postcode/postcodesingle.tsx","./src/postcode/randompostcode.tsx","./src/types/house.ts","./src/types/postcode.ts"],"version":"5.6.2"}
