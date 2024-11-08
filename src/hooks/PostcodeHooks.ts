@@ -10,6 +10,16 @@ import axios, {
 import { useEffect, useState } from "react";
 
 const useFetchPostcodes = () => {
+    // const [postcodes, setPostcodes] = useState<Postcode[]>([]);
+
+    // const fetchPostcodes = async () => {
+    //     const rsp = await fetch(`${config.baseApiUrl}/postcodes`);
+    //     const postcodes = await rsp.json();
+    //     setPostcodes(postcodes);
+    // };
+    // fetchPostcodes();
+    // return postcodes;
+
     return useQuery<Postcode[], AxiosError>({
         queryKey: ["postcodes"],
         queryFn: () =>
