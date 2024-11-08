@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { deletePostcode, useFetchPostcode } from "../hooks/PostcodeHooks";
 import { Button } from "react-bootstrap";
+import { useCallback } from "react";
 
 const PostcodeSingle = () => {
     const { id } = useParams();
@@ -9,12 +10,14 @@ const PostcodeSingle = () => {
 
     const { postcodeData, loading, error } = useFetchPostcode(postcodeId);
 
-    const handleDelete = () => {
+    const handleDelete = useCallback(() => {
         if (postcodeId) {
             console.log(postcodeId);
             deletePostcode(postcodeId);
         }
-    };
+    }, [postcodeId]);
+
+    console.log("done");
 
     return (
         <div className='App'>
