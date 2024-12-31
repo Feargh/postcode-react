@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/postcode-react'>
             <div className='container'>
                 <Navbar />
                 {/* <Header subtitle='Postcodes from all over the UK' /> */}
