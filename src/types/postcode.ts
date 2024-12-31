@@ -9,8 +9,8 @@ export type Postcode = {
 export interface PostcodeResult {
     postcode: string;
     country: string;
-    latitude: string;
-    longitude: string;
+    latitude: number;
+    longitude: number;
 }
 
 export interface PostcodeResponse {
