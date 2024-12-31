@@ -1,15 +1,16 @@
 import { Button } from "react-bootstrap";
 import { useFetchRandomPostcode, postPostcode } from "../hooks/PostcodeHooks";
 import { useState } from "react";
+import Map from "../Map";
 
 const RandomPostcode = () => {
     const { postcodeData, loading, error } = useFetchRandomPostcode();
     const [data, setData] = useState({});
     const postPostcodeFunction = postPostcode();
 
-    if (postcodeData) {
-        console.log(postcodeData.result);
-    }
+    // if (postcodeData) {
+    //     console.log(postcodeData.result);
+    // }
 
     const savePostcode = () => {
         if (postcodeData) {
@@ -128,6 +129,12 @@ const RandomPostcode = () => {
             {/* <Button variant='primary' onClick={newPostcode}>
                 New Postcode
             </Button> */}
+            {postcodeData && (
+                <Map
+                    latitude={postcodeData.result.latitude}
+                    longitude={postcodeData.result.longitude}
+                />
+            )}
         </div>
     );
 };
